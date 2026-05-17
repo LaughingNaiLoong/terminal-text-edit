@@ -247,3 +247,15 @@ html,
 	width: 100%;
 	height: 100%;
 }
+
+.github {
+	background-color: transparent;
+	border: none;
+	width: 2.5em;
+	height: 2.5em;
+}
+
+.github svg {
+	width: 100%;
+	height: 100%;
+}

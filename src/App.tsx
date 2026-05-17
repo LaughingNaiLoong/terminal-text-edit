@@ -19,6 +19,7 @@ import {
 	MdClear,
 	MdContentCopy,
 } from "react-icons/md";
+import { BsGithub } from "react-icons/bs";
 
 interface Language {
 	name: string;
@@ -310,7 +311,17 @@ const TerminalRichEditor: React.FC = () => {
 					<ColorButton type="bg" icon={<MdFormatColorFill size={20} />} />
 					<ClearFormatButton />
 					<div className="toolbar-spacer" />
+
 					<LanguageSelect value={language} onChange={handleLanguageChange} />
+					<button
+						className="github"
+						onClick={() => {
+							location.href =
+								"https://github.com/LaughingNailoong/terminal-text-edit";
+						}}
+					>
+						<BsGithub></BsGithub>
+					</button>
 				</div>
 
 				<div className="editor-wrapper card">
